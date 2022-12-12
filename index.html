@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KOREA EATS</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div id="container">    
+      <header>
+        <div id="logo">
+          <a href="index.html">
+            <h1>KOREA&nbsp;EATS</h1>
+          </a>
+        </div>
+        <nav>
+          <ul id="topMenu">
+            <li><a href="">소개 <span>▼</span></a>
+              <ul>
+                <li><a href="foodkind.html">종류</a></li>
+                <li><a href="foodstory.html">유래</a></li>
+              </ul>
+            </li>
+            <li><a href="#">프로그램  <span>▼</span></a>
+              <ul>
+                <li><a href="foodtour.html">한식 투어</a></li>
+                <li><a href="cookingclass.html">쿠킹 클래스</a></li>
+              </ul>
+            </li>
+            <li><a href="search.html">검색하기</a></li>
+            <li><a href="comment.html">응원하기</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div id="slideShow">
+        <div id="slides">
+          <img src="images/photo-1.jpg" alt="">
+          <img src="images/photo-2.jpg" alt="">
+          <img src="images/photo-3.jpg" alt="">
+          <button id="prev">&lang;</button>
+          <button id="next">&rang;</button>
+        </div>
+      </div>
+      <div id="contents">
+        <div id="tabMenu">
+          <input type="radio" id="tab1" name="tabs" checked>
+          <label for="tab1">뉴스</label>
+          <input type="radio" id="tab2" name="tabs">
+          <label for="tab2">갤러리</label>      
+          <div id="notice" class="tabContent">
+            <h2>오늘의 뉴스입니다.</h2>
+            <ul>            
+              <li><a href="http://www.newsculture.press/news/articleView.html?idxno=512937" target='_blank'>다채로운 ‘Korean Culture Scene’ 행사 홍콩 현지 개최</a></li>
+              <li><a href="https://www.etoday.co.kr/news/view/2181071" target='_blank'>‘hansik(한식)=교포음식’ 편견을 깨다…글로벌 입맛 잡은 ‘K푸드’</a></li>
+              <li><a href="https://news.kbs.co.kr/news/view.do?ncd=5544981&ref=A" target='_blank'>한식 전시·체험·교육을 한곳에서…북촌 ‘한식문화공간’ 개관</a></li>
+              <li><a href="https://www.mk.co.kr/news/culture/10558226?utm_source=naver&utm_medium=referral&utm_campaign=relatednews" target='_blank'>[매일경제TV] 꾸준히 인기 얻는 한식 디저트</a></li>
+              <li><a href="https://biz.chosun.com/distribution/food/2022/11/23/FHXX5IVD7JAJVAAVKBZUTJOSP4/?utm_source=naver&utm_medium=original&utm_campaign=biz" target='_blank'>[K푸드 한류 현장-프랑스]⑤ “김밥 너무 좋아요”… ‘미식의 나라’ 파리 사로잡은 한식의 맛</a></li>            
+            </ul>
+          </div>
+          <div id="gallery" class="tabContent">
+            <h2>갤러리 내용입니다.</h2>
+            <ul>
+              <li><img src="images/갓돈.jpg" style="width:150px; height:100px;"></li>
+              <li><img src="images/사대부집 곳간.jpg" style="width:150px; height:100px;"></li>
+              <li><img src="images/산골항아리바베큐.jpg" style="width:150px; height:100px;"></li>
+              <li><img src="images/초량밀면.jpg" style="width:150px; height:100px;"></li>
+              <li><img src="images/흙과사람들.jpg" style="width:150px; height:100px;"></li>
+              <li><img src="images/어박사애월점.jpg" style="width:150px; height:100px;"></li>                     
+            </ul>
+          </div>        
+        </div>
+        <div id="links">
+          <ul>
+            <li>
+              <a href="memo.html" target='_blank'>
+                <span id="quick-icon1"></span>
+                <p>메모장</p>
+              </a>
+            </li>
+            <li>
+              <a href="https://kto.visitkorea.or.kr/kor/ktom/menupan/main/index.kto">
+                <span id="quick-icon2"></span>
+                <p>한국 관광 공사</p>
+              </a>            
+            </li>
+            <li>  
+              <a class="trigger" href="#">
+                <span id="quick-icon3"></span>
+                <p>문의하기</p>  
+              </a>
+              <!-- 팝업 될 레이어 --> 
+              <div class="modal"> 
+                <div class="modal-content"> 
+                    <span class="close-button">&times;</span> 
+                    <h1 class="title">메일 보내기</h1> 
+                    <form action="#post.php" method="POST"> 
+                    <label for="email">Email</label> 
+                    <input type="email" name="email" placeholder="Your email" required="required"> 
+                    <label></label> 
+                    <textarea name="message" placeholder="Test Message" required="required"></textarea> 
+                    <input type="button" id="cancel" value="취소"> 
+                    <input type="submit" id="submit" value="보내기"> 
+                    </form> 
+                </div> 
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>  
+      <footer>    
+        <div id="bottomMenu">
+          <ul>
+            <li><a href="https://www.google.co.kr/" target='_blank'>검색</a></li>
+            <li><a href="https://www.airbnb.co.kr/" target='_blank'>예약</a></li>
+            <li><a href="https://www.google.co.kr/maps/?hl=ko" target='_blank'>지도</a></li>
+            <li><a href="https://translate.google.co.kr/?hl=ko" target='_blank'>번역기</a></li>
+          </ul>
+          <div id="sns">
+            <ul>
+              <li><a href="https://ko-kr.facebook.com/chimjiljil/" target='_blank'><img src="images/sns-1.png"></a></li>
+              <li><a href="https://www.youtube.com/@TastyGuys" target='_blank'><img src="images/sns-2.png"></a></li>
+              <li><a href="https://www.instagram.com/seoul_life___/" target='_blank'><img src="images/sns-3.png"></a></li>
+            </ul>
+          </div>
+        </div>
+        <div id="company">
+          <p>한국외국어대학교 컴퓨터공학부 202100274 강효빈</p> 
+        </div>     
+      </footer>  
+    </div> 
+
+    <script src="js/slideshow.js"></script>
+    <script src="js/ask.js"></script>
+  </body>
+</html>

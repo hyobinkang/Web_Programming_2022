@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+* {
+  margin:0;   /* 마진 리셋 */
+  padding:0;   /* 패딩 리셋 */
+  box-sizing: border-box;   /* 박스 영역은 테두리까지 */ 
+}
+a {
+  text-decoration:none;  /* 텍스트 링크 밑줄 없애기 */ 
+}
+ul {
+  list-style: none;
+}
+
+#container {
+  margin:0 auto;  /* 화면 중앙에 배치 */
+  width:1440px;    /* 너비 */
+  height: auto;
+  min-height: 100%;
+  position: relative;
+}
+
+/*********************************/
+/* 헤더 영역 - 로고와 내비게이션 */
+/*********************************/
+
+header{
+  width:100%;    /*  너비 */
+  height:100px;   /* 높이 */ 
+  /*background: linear-gradient(135deg, #cc0000, #07c);*/
+  background-color:#b30000;
+}
+
+/* 로고 */
+#logo{ 
+  float:left;   /* 왼쪽으로 플로팅 */ 
+  width:250px;   /*  너비 */ 
+  height:100px;   /* 높이 */
+  line-height:100px;  /* 세로로 중간에 맞춤 - 줄간격을 높이 값과 같게 */
+  padding-left:20px;  /* 왼쪽에 여백 */
+}
+#logo h1 {
+  font-family:'Oswald';
+  font-weight:700;
+  font-size:40px;   /* 글자 크기 */
+  color:#fff;   /* 글자 색*/
+  text-shadow:0 -1px 0 #222;  /* 그림자 색 */
+}
+
+/* 내비게이션 */
+nav{  
+  float:right;   /* 오른쪽으로 플로팅 */
+  width:900px;   /*   너비 */  
+  height:100px;   /* 메뉴 영역 높이 */  
+  padding-top:40px;  /* 메뉴를 아래로 내리기 위해 */  
+}
+#topMenu {  
+  height:60px; 
+}
+#topMenu > li {
+  float:left;  /* 메뉴 항목을 왼쪽으로 플로팅 */ 
+  position: relative;  /* 서브 메뉴를 absolute로 하기 위해, 이 부분을 relative로 */  
+}
+#topMenu > li > a{
+  display:block;  /* 링크 텍스트는 블록으로 */ 
+  color:#fff;  /* 글자 색 */
+  font-weight:600;  /* 글자 굵기 */
+  text-shadow:0 1px #222;  /* 그림자 추가 */
+  padding:20px 60px;  /* 패딩 */ 
+}
+#topMenu > li > a > span {
+  font-size : 0.5em;   /* 서브 메뉴가 있는 항목에 화살표 표시 */   
+}
+#topMenu > li > a:hover {
+  color:#000;  /* 마우스 오버하면 색상 바뀜 */ 
+  /*text-shadow:0 -1px #222;  /* 글자가 너무 굵어지지 않도록 */
+}
+
+#topMenu > li > ul { /* 서브 메뉴 스타일 */
+  display: none;  /* 서브 메뉴 처음에는 화면에 안 보이게 */ 
+  position:absolute;  /* 서브 메뉴 포지셔닝 */ 
+  width:160px;
+  background:rgba(255,255,255,0.6);  /* 슬라이드 쇼 비치도록 배경 색 조절 */
+  left:20px;     
+  margin:0;
+}
+#topMenu > li > ul > li {    
+  padding:10px 10px 10px 30px;   /* 서브 메뉴 항목 */
+}
+#topMenu > li > ul > li > a { 
+  font-size:14px;   
+  padding:10px;
+  color:#000;  
+}
+#topMenu > li:hover > ul {
+  display: block;  /* 메인 메뉴 항목 위로 오버하면 서브 메뉴 표시 */
+  z-index:10;  /* 슬라이드 쇼에 가리지 않게 조절 */ 
+}
+#topMenu > li > ul > li > a:hover {
+  color:#f00;  /* 서브 메뉴 마우스 오버하면 색상 바뀜 */   
+}
+
+/*********************************/
+#contents {
+    padding-bottom: 100px;
+    font-size: 17px;
+    width: auto;
+    margin: 0 20px;
+}
+.page-title {
+    margin-top:30px;
+    padding: 20px 61px 60px;
+}
+.page-title h1{
+        font-size: 37px;
+        color: #222;
+        line-height: 1.15;
+        font-family: 'Oswald';
+        margin: 0 auto;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-align: center;
+}
+.page-wrap {
+    /*padding-top: 40px;*/
+    padding-left: 0;
+    padding-right: 0;
+
+   
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 60px 0 0 0;
+    border-top: 2px solid #444;
+    line-height: 1.706em;
+}
+
+.page-content {
+    max-width: 950px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.img-full {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.img-full > img {
+    width: auto;
+    max-width: 100%;
+    margin: 0 auto;
+    /*vertical-align: top;*/
+    display: block;
+}
+
+.page-section {
+    margin: 20px 0 50px 0;
+    text-align: left;
+}   
+/**************/
+
+.page-section h2 {
+    line-height: 36px;
+}
+
+.post-title {
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 38px;
+    letter-spacing: -0.025em;
+    padding-bottom: 25px;
+    margin: 100px 0 55px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.page-content h2 {
+    font-size: 32px;
+    line-height: 38px;
+    letter-spacing: -0.025em;
+    font-weight: 900;
+    color: #333 !important;
+}
+
+.page-content h3{
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: -0.035em;
+    color: #333 !important;
+    margin: 0 0 5px;
+}
+
+.page-content p {
+    font-size: 17px;
+    line-height: 1.706em;
+    letter-spacing: -0.03em;
+    margin: 0 0 30px;
+    color: #333;
+}
+
+.img-area{
+    margin: 25px auto 30px auto;
+    overflow: hidden;
+    max-width: 702px;
+    /*display: -webkit-box;*/
+    /*display: -ms-flexbox;*/
+    display: flex;
+    /*-webkit-box-lines: multiple;*/
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    /*-webkit-justify-content: center;*/
+    justify-content: center;
+    -webkit-box-align: start;
+    /*-ms-flex-align: start;*/
+    align-items: flex-start;
+
+}
+
+.star-point {
+    display: block;
+    position: relative;
+    margin-top: 15px;
+    padding-left: 10px;
+}
+
+/**************************/
+/********푸터 영역***********/
+footer{   
+    width:100%;   /* 너비 */
+    height:100px;  /* 높이 */
+    border-top:2px solid #222;
+    position: relative;
+  }
+  #bottomMenu{
+    width:100%;
+    height:20px;
+    position:relative;  
+  }
+  #bottomMenu ul {
+    margin-top:15px;  
+  }
+  #bottomMenu ul li{
+    float:left;  /* 가로로 배치 */ 
+    padding:5px 20px;
+    border-right:1px solid #ddd;   /* 항목 오른쪽에 테두리 */ 
+  }
+  #bottomMenu ul li:last-child{
+    border:none;  /* 마지막 항목에는 오른쪽 테두리 없음 */  
+  }
+  #bottomMenu ul li a, #bottomMenu ul li a:visited {  
+    font-size:15px;  /* 글자 크기 */ 
+    color:#666;   /* 글자 색 */ 
+  }
+  #sns {
+    position:absolute;  
+    right:0;  /* 오른쪽 끝에 배치 */ 
+  }
+  #sns ul li{
+    border:none;  /* 테두리 없이 */
+    padding:5px;   
+  } 
+  #company{
+    clear:left;  /* 플로팅 해제. clear:both도 가능 */
+    margin-top:25px;  /* 위쪽 마진 */
+    margin-left:20px;  /* 왼쪽 마진 */ 
+  }
+  p {
+    font-size:14px;  /* 글자 크기 */
+    color:#aaa;    /* 글자 색*/ 
+  }

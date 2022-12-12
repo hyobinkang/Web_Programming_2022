@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>memo</title>
+
+		<style>
+			*{
+				background: #ffe680;
+			}
+
+			#ol {
+				list-style-type: upper-alpha;
+			}
+		</style>
+
+		<script>
+			function input() {
+				var text = prompt("메모하고 싶은것을 입력해주세요");
+				var ol = document.getElementById("ol");
+				var li = document.createElement("li");
+				li.innerHTML = text;
+				ol.appendChild(li);
+			}
+		</script>
+	</head>
+	<body>
+		<h3>메모장</h3>
+		<hr>
+		<ol id="ol" onclick="input()">
+			<li>이곳은 새로운 창입니다. 창을 작게 띄어 다른 화면을 보며 함께 이용이 가능합니다<br>----------------------메모하기 위해서 이곳을 눌러주세요---------------------</li>
+		</ol>
+	</body>
+</html>

@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+* {
+    margin:0;   /* 마진 리셋 */
+    padding:0;   /* 패딩 리셋 */
+    box-sizing: border-box;   /* 박스 영역은 테두리까지 */ 
+  }
+
+header{
+    width:100%;    /*  너비 */
+    height:100px;   /* 높이 */ 
+    /*background: linear-gradient(135deg, #cc0000, #07c);*/
+    background-color:#b3b3b3;
+}
+
+header h4{
+    font-family:'Oswald';
+    font-weight:500;
+    font-size: 30px;   /* 글자 크기 */
+    color: #000;   /* 글자 색*/
+    text-shadow:0 -1px 0 #fff;  /* 그림자 색 */
+    padding-top: 25px;
+    text-align: center;
+}
+
+.text{
+    line-height: 50px;
+}
+
+
+fieldset li{
+    text-align:left;
+    margin: 20px 40px;
+    border-bottom: 2px solid #444;
+}
+
+fieldset li a{
+    text-decoration-line: none;
+}
+
+.text h3{
+    font-family:'Oswald';
+    color: #000;   /* 글자 색*/
+    text-align: center;
+}
+
+.text h4{
+    font-family:'Oswald';
+    color: #000;   /* 글자 색*/
+    text-align: center;
+}
+
+th, td {
+	padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.reservation{
+    margin: 20px 10px;
+}
+
+.reservation form{
+    padding-bottom: 20px;
+}
+
+.reservation a{
+    margin: 150px 150px 150px 150px;
+    text-align:center;
+    text-decoration-line: none;
+}
